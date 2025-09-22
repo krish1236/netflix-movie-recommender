@@ -9,7 +9,7 @@ import re
 
 # Load data from real Netflix Excel file
 try:
-    excel_file = '/Users/krishnateja/Downloads/What_We_Watched_A_Netflix_Engagement_Report_2025Jan-Jun.xlsx'
+    excel_file = '/Users/Downloads/What_We_Watched_A_Netflix_Engagement_Report_2025Jan-Jun.xlsx'
     
     shows_df = pd.read_excel(excel_file, sheet_name='Shows', skiprows=5)
     shows_df = shows_df.dropna(subset=['Title'])
